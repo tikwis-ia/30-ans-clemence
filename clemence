@@ -1,0 +1,30 @@
+Last login: Sat Jul 25 11:26:00 on console
+yohannhebert@MacBook-Air-de-Yohann ~ % cd "/Users/yohannhebert/Documents/test site"
+git init
+git add index.html style.css script.js images
+git commit -m "Site cagnotte 30 ans de Clémence"
+Initialized empty Git repository in /Users/yohannhebert/Documents/test site/.git/
+[main (root-commit) 9cba18d] Site cagnotte 30 ans de Clémence
+ Committer: Yohann Hebert <yohannhebert@MacBook-Air-de-Yohann.local>
+Your name and email address were configured automatically based
+on your username and hostname. Please check that they are accurate.
+You can suppress this message by setting them explicitly. Run the
+following command and follow the instructions in your editor to edit
+your configuration file:
+
+    git config --global --edit
+
+After doing this, you may fix the identity used for this commit with:
+
+    git commit --amend --reset-author
+
+ 8 files changed, 1162 insertions(+)
+ create mode 100644 images/.DS_Store
+ create mode 100644 images/hero.jpg
+ create mode 100644 images/martinique-1.jpg
+ create mode 100644 images/martinique-2.jpg
+ create mode 100644 images/qrcode-wero.jpg
+ create mode 100644 index.html
+ create mode 100644 script.js
+ create mode 100644 style.css
+yohannhebert@MacBook-Air-de-Yohann test site % 
