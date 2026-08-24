@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+  <title>30 ans de Clémence · Cagnotte voyage</title>
+  <meta name="description" content="Clémence souffle ses 30 bougies. Participez à la cagnotte pour lui offrir un voyage mémorable au soleil, en Martinique.">
+  <meta name="theme-color" content="#0c3b4a">
+
+  <!-- Open Graph / réseaux sociaux -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="30 ans de Clémence · Cagnotte voyage">
+  <meta property="og:description" content="Clémence souffle ses 30 bougies. Offrez-lui un voyage mémorable au soleil, entre mer turquoise, découvertes et moments inoubliables.">
+  <meta property="og:image" content="images/hero.jpg">
+  <meta property="og:locale" content="fr_FR">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="30 ans de Clémence · Cagnotte voyage">
+  <meta name="twitter:description" content="Clémence souffle ses 30 bougies. Offrez-lui un voyage mémorable au soleil, entre mer turquoise, découvertes et moments inoubliables.">
+  <meta name="twitter:image" content="images/hero.jpg">
+
+  <!-- Favicon (SVG inline, pas de fichier externe requis) -->
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='22' fill='%230c3b4a'/%3E%3Cpath d='M20 62c8-14 18-20 30-20s22 6 30 20' stroke='%237fb8a4' stroke-width='6' fill='none' stroke-linecap='round'/%3E%3Ccircle cx='50' cy='30' r='9' fill='%23e8b76a'/%3E%3C/svg%3E">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Jost:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- ==================== NAVIGATION ==================== -->
+  <header class="site-header" id="top">
+    <div class="header-inner">
+      <span class="brand">Clémence · 30 ans</span>
+      <nav class="site-nav" aria-label="Navigation principale">
+        <a href="#objectif">Objectif</a>
+        <a href="#activites">Activités</a>
+        <a href="#participer">Participer</a>
+        <a href="#faq">FAQ</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+
+    <!-- ==================== 1. HERO ==================== -->
+    <section class="hero" id="hero">
+      <div class="hero-media" aria-hidden="true">
+        <img src="images/hero.jpg" alt="" class="hero-img" onerror="this.style.display='none'; this.parentElement.classList.add('hero-media--placeholder');">
+        <div class="hero-overlay"></div>
+      </div>
+
+      <div class="hero-content reveal">
+        <p class="eyebrow" id="hero-date">17 Novembre 2026</p>
+        <h1 id="hero-titre">30 ans de Clémence</h1>
+        <p class="hero-subtitle" id="hero-soustitre">Clémence s'apprête à souffler ses 30 bougies. Offrons-lui un voyage mémorable au soleil, entre mer turquoise, découvertes et moments inoubliables.</p>
+        <a href="#objectif" class="btn btn-primary hero-cta">
+          <span>Participer à l'aventure</span>
+          <svg class="btn-arrow" width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden="true">
+            <path d="M8 2v11M3 9l5 5 5-5" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+        </a>
+      </div>
+
+      <div class="scroll-hint" aria-hidden="true">
+        <span></span>
+      </div>
+    </section>
+
+    <!-- ==================== 2. INTRODUCTION ==================== -->
+    <section class="intro section" id="intro">
+      <div class="container container--narrow reveal">
+        <p class="intro-text" id="intro-texte-1">
+          Pour fêter comme il se doit les 30 ans de notre Clémence nationale, une cagnotte est ouverte pour l'aider à s'offrir le voyage de rêve qu'elle mérite&nbsp;: direction la Martinique&nbsp;!
+        </p>
+        <p class="intro-text" id="intro-texte-2">
+          Chaque participation permettra de lui offrir une expérience supplémentaire sur place, un peu plus de soleil, un peu plus de souvenirs.
+        </p>
+        <p class="intro-text intro-text--emphasis">
+          <span id="intro-texte-3">Et évidemment, chaque contribution, petite ou grande, fera énormément plaisir</span> <span aria-hidden="true">❤️</span>
+        </p>
+        <p class="intro-text intro-text--video">
+          Envie de lui laisser un petit mot ? Enregistrez un message vidéo et déposez-le dans <a href="#" id="intro-drive-link" target="_blank" rel="noopener noreferrer">ce dossier drive</a>. On vous prépare un montage surprise, diffusé le jour J, sur place, au soleil.
+        </p>
+      </div>
+    </section>
+
+    <!-- ==================== 3. OBJECTIF ==================== -->
+    <section class="section objectif" id="objectif">
+      <div class="container container--narrow reveal">
+        <div class="objectif-card">
+          <span class="eyebrow eyebrow--center">Notre objectif</span>
+          <p class="objectif-montant"><span id="objectif-valeur">1 800</span> €</p>
+
+          <div class="progress-wrap">
+            <div class="progress-track" role="progressbar" aria-valuemin="0" aria-valuemax="100" aria-valuenow="0" aria-label="Progression de la cagnotte" id="progress-track">
+              <div class="progress-fill" id="progress-fill"></div>
+            </div>
+            <div class="progress-labels">
+              <span><strong id="montant-recolte">0 €</strong> récoltés</span>
+              <span id="pourcentage-label">0 % de l'objectif atteint</span>
+            </div>
+          </div>
+
+          <div class="objectif-meta">
+            <div class="meta-item">
+              <span class="meta-value" id="objectif-affiche">1 800 €</span>
+              <span class="meta-label">Objectif</span>
+            </div>
+            <div class="meta-divider" aria-hidden="true"></div>
+            <div class="meta-item">
+              <span class="meta-value" id="participants-valeur">0</span>
+              <span class="meta-label">Participants</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== 4. À QUOI SERVIRA LA CAGNOTTE ==================== -->
+    <section class="section activites" id="activites">
+      <div class="container reveal">
+        <span class="eyebrow eyebrow--center">Sur place</span>
+        <h2 class="section-title">À quoi servira la cagnotte&nbsp;?</h2>
+
+        <div class="cards-grid">
+          <article class="activity-card reveal">
+            <div class="activity-icon" aria-hidden="true">
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="none"><path d="M2 17c1.8-1.5 3.6-1.5 5.4 0 1.8 1.5 3.6 1.5 5.4 0 1.8-1.5 3.6-1.5 5.4 0 1.8 1.5 3.6 1.5 5.4 0" stroke="currentColor" stroke-width="1.4" stroke-linecap="round"/><path d="M2 12c1.8-1.5 3.6-1.5 5.4 0 1.8 1.5 3.6 1.5 5.4 0 1.8-1.5 3.6-1.5 5.4 0 1.8 1.5 3.6 1.5 5.4 0" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" opacity="0.5"/><path d="M12 3v6M9 6l3-3 3 3" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </div>
+            <h3>Excursions en mer</h3>
+            <p>Larguer les amarres pour explorer les côtes et les eaux turquoise de l'île.</p>
+          </article>
+
+          <article class="activity-card reveal">
+            <div class="activity-icon" aria-hidden="true">
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="none"><path d="M3 12c3-3.5 6-5 9-5s6 1.5 9 5c-3 3.5-6 5-9 5s-6-1.5-9-5Z" stroke="currentColor" stroke-width="1.4" stroke-linejoin="round"/><circle cx="14" cy="12" r="1.6" fill="currentColor"/></svg>
+            </div>
+            <h3>Snorkeling</h3>
+            <p>Mettre la tête sous l'eau pour observer les fonds marins et leurs habitants.</p>
+          </article>
+
+          <article class="activity-card reveal">
+            <div class="activity-icon" aria-hidden="true">
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="none"><path d="M12 3c-2 3-3 5-3 8a3 3 0 0 0 6 0c0-3-1-5-3-8Z" stroke="currentColor" stroke-width="1.4" stroke-linejoin="round"/><path d="M12 14v7M8 21h8" stroke="currentColor" stroke-width="1.4" stroke-linecap="round"/></svg>
+            </div>
+            <h3>Découverte de l'île</h3>
+            <p>Partir en exploration à la recherche des plus beaux coins de paradis.</p>
+          </article>
+
+          <article class="activity-card reveal">
+            <div class="activity-icon" aria-hidden="true">
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="4.2" stroke="currentColor" stroke-width="1.4"/><path d="M12 2.5v2.4M12 19.1v2.4M4.2 4.2l1.7 1.7M18.1 18.1l1.7 1.7M2.5 12h2.4M19.1 12h2.4M4.2 19.8l1.7-1.7M18.1 5.9l1.7-1.7" stroke="currentColor" stroke-width="1.4" stroke-linecap="round"/></svg>
+            </div>
+            <h3>Moments détente</h3>
+            <p>Ne rien faire (ou presque) : plage, soleil et douceur martiniquaise au programme.</p>
+          </article>
+        </div>
+
+        <div class="gallery reveal">
+          <div class="gallery-item">
+            <img src="images/martinique-1.jpg" alt="Paysage de Martinique" loading="lazy" onerror="this.style.display='none'; this.parentElement.classList.add('gallery-item--placeholder');">
+          </div>
+          <div class="gallery-item">
+            <img src="images/martinique-2.jpg" alt="Côte de Martinique" loading="lazy" onerror="this.style.display='none'; this.parentElement.classList.add('gallery-item--placeholder');">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== 5. PARTICIPATION ==================== -->
+    <section class="section participer" id="participer">
+      <div class="container container--narrow reveal">
+        <span class="eyebrow eyebrow--center">Contribuer</span>
+        <h2 class="section-title">Envie de participer&nbsp;? <span aria-hidden="true">❤️</span></h2>
+        <p class="participer-sub">Vous pouvez participer au montant de votre choix, il n'y a pas de petite contribution !</p>
+        <p class="participer-explain">Pour envoyer de l'argent via Wero, il vous suffit de scanner le QR code avec votre téléphone depuis l'onglet Wero de votre application bancaire.</p>
+
+        <div class="participer-card">
+          <div class="qr-wrap">
+            <div class="qr-frame" id="qr-frame">
+              <img src="images/qrcode-wero.jpg" alt="QR code Wero pour participer à la cagnotte" id="qr-image" onerror="this.style.display='none'; this.parentElement.classList.add('qr-frame--placeholder');">
+            </div>
+            <p class="qr-caption">QR code Wero</p>
+          </div>
+
+          <a href="#" class="btn btn-primary btn-large" id="wero-btn" target="_blank" rel="noopener noreferrer">
+            <span>Participer avec Wero</span>
+            <svg width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden="true">
+              <path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </a>
+
+          <p class="participer-hint">Scannez le QR code ou cliquez sur le bouton ci-dessus, comme vous préférez !</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== 6. FAQ ==================== -->
+    <section class="section faq" id="faq">
+      <div class="container container--narrow reveal">
+        <span class="eyebrow eyebrow--center">Questions fréquentes</span>
+        <h2 class="section-title">FAQ</h2>
+
+        <div class="faq-list">
+          <div class="faq-item">
+            <button class="faq-question" aria-expanded="false" aria-controls="faq-answer-1" id="faq-trigger-1">
+              <span>Comment participer à la cagnotte&nbsp;?</span>
+              <svg class="faq-icon" width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden="true">
+                <path d="M8 2v12M2 8h12" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/>
+              </svg>
+            </button>
+            <div class="faq-answer" id="faq-answer-1" role="region" aria-labelledby="faq-trigger-1">
+              <p>Vous pouvez participer via WERO, disponible dans toutes les banques en Europe (oui, même la vôtre). On a privilégié ce système pour éviter les frais des sites de cagnotte classiques type Leetchi, histoire de garder un maximum de budget pour Clémence plutôt que pour une plateforme. Pour envoyer de l'argent via Wero, il vous suffit de scanner le QR code avec votre téléphone depuis l'onglet Wero de votre application bancaire. Vous préférez un bon vieux virement bancaire&nbsp;? Contactez directement Yohann.</p>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <button class="faq-question" aria-expanded="false" aria-controls="faq-answer-2" id="faq-trigger-2">
+              <span>Pourquoi la Martinique&nbsp;?</span>
+              <svg class="faq-icon" width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden="true">
+                <path d="M8 2v12M2 8h12" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/>
+              </svg>
+            </button>
+            <div class="faq-answer" id="faq-answer-2" role="region" aria-labelledby="faq-trigger-2">
+              <p>La Martinique n'est qu'à une courte distance du Canada&nbsp;: parfait pour une échappée soleil. Alors que l'hiver aura déjà pris ses quartiers au Québec, une bonne dose de rayons permettra de raviver la mélanine de Clémence et de lui offrir un teint de reine.</p>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <button class="faq-question" aria-expanded="false" aria-controls="faq-answer-3" id="faq-trigger-3">
+              <span>Comment participer à la vidéo d'anniversaire&nbsp;?</span>
+              <svg class="faq-icon" width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden="true">
+                <path d="M8 2v12M2 8h12" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/>
+              </svg>
+            </button>
+            <div class="faq-answer" id="faq-answer-3" role="region" aria-labelledby="faq-trigger-3">
+              <p>Un dossier drive a été créé, il suffit d'y glisser votre vidéo (pas besoin d'être Spielberg). Un montage surprise sera réalisé et diffusé le jour de son anniversaire, pour lui partager vos plus beaux mots. Voici le <a href="#" id="faq-drive-link" target="_blank" rel="noopener noreferrer">lien du dossier drive</a>.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== 7. REMERCIEMENT ==================== -->
+    <section class="section merci" id="merci">
+      <div class="container container--narrow reveal">
+        <h2 class="merci-title">Merci mille fois <span aria-hidden="true">❤️</span></h2>
+        <p class="merci-text">Merci de participer à cette folle aventure et de nous aider à offrir à Clémence le voyage dont elle rêve.</p>
+        <p class="merci-text merci-text--soft">On pensera très fort à vous... depuis le sable chaud des plages martiniquaises <span aria-hidden="true">🌴☀️</span></p>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ==================== 8. FOOTER ==================== -->
+  <footer class="site-footer">
+    <p>30 ans de Clémence · 2026</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
