@@ -5,7 +5,7 @@
 
 const cagnotte = {
   objectif: 1800,      // Objectif financier en euros
-  recolte: 600,          // Montant déjà récolté en euros — à modifier au fil du temps
+  recolte: 500,          // Montant déjà récolté en euros — à modifier au fil du temps
   participants: 2         // Nombre de participants — à modifier au fil du temps
 };
 
